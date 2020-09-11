@@ -30,5 +30,8 @@ android:
     - 'mips-.+'
     - 'google-.+'
     
+before_install:
+   - echo y | sdkmanager "ndk-bundle"
+
 script:
   - ./gradlew clean assembleDebug
