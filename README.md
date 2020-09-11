@@ -1,5 +1,8 @@
 # AndEngine
 
+![travis-ci badge](https://travis-ci.org/the3deers/AndEngine.svg?branch=GLES2)
+
+
 Free Android 2D OpenGL Game Engine for Android.
 This is a fork of https://github.com/nicolasgramlich/AndEngine
 
