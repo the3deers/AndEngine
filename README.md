@@ -38,7 +38,6 @@ You can install the application in either of these ways:
   * Import project with Android Studio 4.0.1 and click on play >
 
 ```
-    cd demo-android
     export ANDROID_HOME=/home/$USER/Android/Sdk
     ./gradlew assembleDebug
     adb install -r app/build/outputs/apk/debug/app-debug.apk
