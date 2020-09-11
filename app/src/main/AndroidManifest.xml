@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.andengine"
+	android:versionCode="46"
+	android:versionName="1.4.6">
+	
+	<uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".examples.launcher.ExampleLauncher" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".examples.util.BluetoothListDevicesActivity" android:configChanges="orientation" android:theme="@android:style/Theme.Dialog"/>
+
+		<activity android:name=".examples.AnalogOnScreenControlExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.AnalogOnScreenControlsExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.AnimatedSpritesExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.AugmentedRealityExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.AugmentedRealityHorizonExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.AutoParallaxBackgroundExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.BitmapFontExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.BoundCameraExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.CanvasTextureCompositingExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.CardinalSplineMoveModifierExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ChangeableTextExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.CollisionDetectionExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ColorKeyTextureSourceDecoratorExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.CoordinateConversionExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.CustomFontExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.DigitalOnScreenControlExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.EaseFunctionExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.EntityModifierExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.EntityModifierIrregularExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ETC1TextureExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.HullAlgorithmExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ImageFormatsExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.LevelLoaderExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.LineExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.LoadTextureExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MenuExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ModPlayerExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MotionStreakExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MovingBallExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MultiplayerExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MultiplayerServerDiscoveryExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MultiplayerBluetoothExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MultiTouchExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.MusicExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ParticleSystemCoolExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ParticleSystemNexusExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ParticleSystemSimpleExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PathModifierExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PauseExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PhysicsCollisionFilteringExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PhysicsExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PhysicsFixedStepExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PhysicsJumpExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PhysicsRemoveExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PhysicsRevoluteJointExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PhysicsMouseJointExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PinchZoomExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PVRCCZTextureExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PVRGZTextureExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.PVRTextureExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.RadialBlurExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.RectangleExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.RepeatingSpriteBackgroundExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.Rotation3DExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.RunnablePoolUpdateHandlerExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ScreenCaptureExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.SoundExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.SplitScreenExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.SpriteBatchExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.SpriteExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.SpriteRemoveExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.StrokeFontExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.SubMenuExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.SVGTextureRegionExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TextExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TextBreakExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TextMenuExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TextureOptionsExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TexturePackerExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TMXTiledMapExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TickerTextExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.TouchDragExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.UnloadResourcesExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.UpdateTextureExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.XMLLayoutExample" android:configChanges="orientation"/>
+		<activity android:name=".examples.ZoomExample" android:configChanges="orientation"/>
+		
+		<activity android:name=".examples.benchmark.AnimationBenchmark" android:configChanges="orientation"/>
+		<activity android:name=".examples.benchmark.AttachDetachBenchmark" android:configChanges="orientation"/>
+		<activity android:name=".examples.benchmark.ParticleSystemBenchmark" android:configChanges="orientation"/>
+		<activity android:name=".examples.benchmark.PhysicsBenchmark" android:configChanges="orientation"/>
+		<activity android:name=".examples.benchmark.EntityModifierBenchmark" android:configChanges="orientation"/>
+		<activity android:name=".examples.benchmark.SpriteBenchmark" android:configChanges="orientation"/>
+		<activity android:name=".examples.benchmark.TickerTextBenchmark" android:configChanges="orientation"/>
+		
+		<activity android:name=".examples.game.pong.PongGameActivity" android:configChanges="orientation"/>
+		<activity android:name=".examples.game.snake.SnakeGameActivity" android:configChanges="orientation"/>
+		<activity android:name=".examples.game.racer.RacerGameActivity" android:configChanges="orientation"/>
+		
+		<activity android:name=".examples.app.cityradar.CityRadarActivity" android:configChanges="orientation"/>
+	</application>
+</manifest>
